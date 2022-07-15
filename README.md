@@ -1,7 +1,5 @@
 <h1>Python-Examples</h1>
 
-<p>Exemplos diversos em Linguagem Python</p>
-
 ![Badge Linguagem](http://img.shields.io/static/v1?label=LINGUAGEM&message=PYTHON&color=informational&style=plastic)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellowgreen&style=plastic)
 
@@ -38,5 +36,15 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
 <hr/>
 
 <h3>BIBLIOTECAS</h3>
+
+<h4>Pytube</h4>
+
+<p>Esta biblioteca permite baixar vídeos do Youtube</p>
+
+<p>URL:</p> <a target="_blank" href="https://pypi.org/project/pytube/</a></p>
+
+<p>Será necessário fazer um ajuste na linha 30 do arquivo cipher.py</p>
+
+<pre><code>var_regex = re.compile("^\$*\w+\W")</code></pre>
 
 <hr/>

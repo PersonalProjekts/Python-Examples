@@ -23,7 +23,9 @@
 
 <p>Caso ele já esteja instalado é sempre aconselhável atualizar a versão do PIP:</p>
 
-<pre><code>python -m pip install --upgrade pip</code></pre>
+```bash
+python -m pip install --upgrade pip
+```
 
 <p>Uma vez atualizado, utilizamos o comando PIP para instalar a biblioteca desejada:</p>
 
@@ -37,14 +39,16 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
 
 <h3>BIBLIOTECAS</h3>
 
+<div style="margin-left:45px; width:50%;">
 <h4>Pytube</h4>
 
 <p>Esta biblioteca permite baixar vídeos do Youtube</p>
 
-<p>URL:</p> <a target="_blank" href="https://pypi.org/project/pytube/</a></p>
+<pre><a target="_blank" href="https://pypi.org/project/pytube/">https://pypi.org/project/pytube/</a></pre>
 
-<p>Será necessário fazer um ajuste na linha 30 do arquivo cipher.py</p>
+<p>Será necessário fazer um ajuste na linha 30 do arquivo <b>cipher.py</b></p>
 
 <pre><code>var_regex = re.compile("^\$*\w+\W")</code></pre>
 
+</div>
 <hr/>

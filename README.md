@@ -23,9 +23,7 @@
 
 <p>Caso ele já esteja instalado é sempre aconselhável atualizar a versão do PIP:</p>
 
-```bash
-python -m pip install --upgrade pip
-```
+<pre><code>python -m pip install --upgrade pip</code></pre>
 
 <p>Uma vez atualizado, utilizamos o comando PIP para instalar a biblioteca desejada:</p>
 
@@ -39,16 +37,39 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
 
 <h3>BIBLIOTECAS</h3>
 
-<div style="margin-left:45px; width:50%;">
-<h4>Pytube</h4>
+<details><summary><h4>Pytube</h4></summary>
 
 <p>Esta biblioteca permite baixar vídeos do Youtube</p>
+
+<p>A sua documentação pode ser vista em:</p>
 
 <pre><a target="_blank" href="https://pypi.org/project/pytube/">https://pypi.org/project/pytube/</a></pre>
 
 <p>Será necessário fazer um ajuste na linha 30 do arquivo <b>cipher.py</b></p>
 
-<pre><code>var_regex = re.compile("^\$*\w+\W")</code></pre>
+```python
+var_regex = re.compile("^\$*\w+\W")
+```
+<p>Uma vez que o ajuste foi feito, basta no início do seu código importar a bilbioteca Pytube.</p>
 
-</div>
+```python
+from pytube import YouTube
+```
+</details>
+
+<details><summary><h4>MoviePy</h4></summary>
+
+<p>Esta biblioteca habilita recursos para edição de vídeo: corte, concatenação, inserções de títulos, composição de vídeo (também conhecida como edição não linear), processamento de vídeo e criação de efeitos personalizados.</p>
+
+<p>A sua documentação pode ser vista em:</p>
+
+<pre><a target="_blank" href="https://pypi.org/project/moviepy/">https://pypi.org/project/moviepy/</a></pre>
+
+<p>Para us-ala basta no início do seu código importar a bilbioteca MoviePy.</p>
+
+```python
+import moviepy.editor
+```
+</details>
+
 <hr/>

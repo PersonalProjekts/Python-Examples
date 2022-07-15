@@ -27,8 +27,16 @@
 
 <pre><code>python -m pip install --upgrade pip</code></pre>
 
-<p>Uma vezatualizado, utilizamos o comando PIP para instalar a biblioteca desejada:</p>
+<p>Uma vez atualizado, utilizamos o comando PIP para instalar a biblioteca desejada:</p>
 
 <pre><code>pip install <i>nome_biblioteca</i></code></pre>
+
+Onde <i>nome_biblioteca</i> é o nome da biblioteca que se deseja instalar.
+
+A seguir iremos listar as bibliotecas que precisarão ser instaladas.
+
+<hr/>
+
+
 
 <hr/>

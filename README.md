@@ -65,7 +65,7 @@ from pytube import YouTube
 
 <pre><a target="_blank" href="https://pypi.org/project/moviepy/">https://pypi.org/project/moviepy/</a></pre>
 
-<p>Para us-ala basta no início do seu código importar a bilbioteca MoviePy.</p>
+<p>Para usá-la basta no início do seu código importar a bilbioteca MoviePy.</p>
 
 ```python
 import moviepy.editor

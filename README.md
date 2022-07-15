@@ -11,4 +11,16 @@
 
 <p>A depender do exemplo a ser estudado, algumas bibliotecas deverão ser instaladas. Para isso deverá ser utilizado o instalador de pacotes PIP. Vejamos como utilizá-lo.</p>
 
+<p>Como primeiro passo, é sempre aconselhável atualizar a versão do PIP:</p>
+
+<code>
+$ python -m pip install --upgrade pip
+</code>
+
+<p>Uma vezatualizado, utilizamos o comando PIP para instalar a biblioteca desejada:</p>
+
+<code>
+$ pip install <font-color='#FFFF00'>nome_biblioteca</font>
+</code>
+
 <hr/>

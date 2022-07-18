@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/23036697/179608946-f813db87-a0ef-4135-b86e-a811a346d6f1.png" height="10%" alt="accessibility text">
+  <img src="https://user-images.githubusercontent.com/23036697/179610525-9ee37437-9302-4681-a5e7-7ce84cd6776a.png" alt="accessibility text">
 </p>
-
-<h1>Python-Examples</h1>
 
 ![Badge Linguagem](http://img.shields.io/static/v1?label=LINGUAGEM&message=PYTHON&color=informational&style=plastic)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellowgreen&style=plastic)

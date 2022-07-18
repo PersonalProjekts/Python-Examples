@@ -72,4 +72,26 @@ import moviepy.editor
 ```
 </details>
 
+<details><summary><h4>QRCode</h4></summary>
+
+<p>Esta biblioteca é utilizada para a geração de QrCodes.</p>
+
+<p>A sua documentação pode ser vista em:</p>
+
+<pre><a target="_blank" href="https://pypi.org/project/qrcode/">https://pypi.org/project/qrcode/</a></pre>
+
+<p>Para usá-la basta no início do seu código importar a bilbioteca QRCode.</p>
+
+```python
+import qrcode
+```
+
+<p>A instalação padrão inclui a biblioteca <i>Pillow</i>:</p>
+
+<p>A documentação da biblioteca <i>Pillow</i> pode ser vista em:</p>
+
+<pre><a target="_blank" href="https://pypi.org/project/Pillow/">https://pypi.org/project/Pillow/</a></pre>
+
+</details>
+
 <hr/>

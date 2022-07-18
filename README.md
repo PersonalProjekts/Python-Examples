@@ -135,6 +135,10 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
   ```python
   from geopy.geocoders import Nominatim
   ```
+  
+  <p>Um exemplo dessa biblioteca utilizando como API para geração de mapa o OpenStreetMap (<pre><a target="_blank" href="https://www.openstreetmap.org/#map=4/-23.56/-46.67">https://www.openstreetmap.org/</a></pre> com o Geocoder <i>Nominatim</i> pode ser visto em:</p>
+  
+  <pre><a target="_blank" href="https://nominatim.openstreetmap.org/ui/search.html">https://nominatim.openstreetmap.org/ui/search.html</a></pre>  
 </details>
 
 <hr/>

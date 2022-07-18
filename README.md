@@ -1,7 +1,6 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/23036697/179608946-f813db87-a0ef-4135-b86e-a811a346d6f1.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/23036697/179608946-f813db87-a0ef-4135-b86e-a811a346d6f1.png">
-</picture>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/23036697/179608946-f813db87-a0ef-4135-b86e-a811a346d6f1.png" height="10%" alt="accessibility text">
+</p>
 
 <h1>Python-Examples</h1>
 

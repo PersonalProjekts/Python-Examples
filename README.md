@@ -108,7 +108,7 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
 </details>
 
 <details><summary><h4>GeoPy</h4></summary>
-  <p>Esta biblioteca é um cliente para vários serviços web de geocodificação.</p>
+  <p>Esta biblioteca é um cliente para vários serviços web de geocodificação (<i>Geocoders</i>).</p>
   
   <p>Ela inclui classes para:</p>
 
@@ -118,18 +118,22 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
     <li>e outros serviços de geocodificação.
   </ul>
   
-  <p>A lista completa está em <</p>
+  <p>A lista completa está em </p>
 
   <pre><a target="_blank" href="https://geopy.readthedocs.io/en/latest/#geocoders">https://geopy.readthedocs.io/en/latest/#geocoders</a></pre>
   
   <p>A sua documentação pode ser vista em:</p>
   
   <pre><a target="_blank" href="https://pypi.org/project/geopy/">https://pypi.org/project/geopy/</a></pre>
+  
+  <p>Ou em...</p>
+  
+  <pre><a target="_blank" href="https://geopy.readthedocs.io/en/stable/">https://geopy.readthedocs.io/en/stable/</a></pre>
 
-  <p>Para usá-la basta no início do seu código importar a bilbioteca PyQRCode.</p>
+  <p>Para usá-la basta no início do seu código importar a bilbioteca GeoPy informando qual o <i>Geocoder</i> que você irá trabalhar.</p>
 
   ```python
-  import pyqrcode
+  from geopy.geocoders import Nominatim
   ```
 </details>
 

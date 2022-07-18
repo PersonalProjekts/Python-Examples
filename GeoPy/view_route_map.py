@@ -9,7 +9,7 @@ geolocator = Nominatim(user_agent = 'exemplo_geolocalizacao')
 
 # Entrada das Localidades
 origem  = 'Natal'
-destino = 'Minas Gerais'
+destino = 'Belo Horizonte'
 
 # Obtem a Localização a partir das Localidades informadas
 local_origem  = geolocator.geocode(origem)

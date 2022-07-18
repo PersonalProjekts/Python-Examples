@@ -38,65 +38,61 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
 <h3>BIBLIOTECAS</h3>
 
 <details><summary><h4>Pytube</h4></summary>
+  <p>Esta biblioteca permite baixar vídeos do Youtube</p>
 
-<p>Esta biblioteca permite baixar vídeos do Youtube</p>
+  <p>A sua documentação pode ser vista em:</p>
 
-<p>A sua documentação pode ser vista em:</p>
+  <pre><a target="_blank" href="https://pypi.org/project/pytube/">https://pypi.org/project/pytube/</a></pre>
 
-<pre><a target="_blank" href="https://pypi.org/project/pytube/">https://pypi.org/project/pytube/</a></pre>
+  <p>Será necessário fazer um ajuste na linha 30 do arquivo <b>cipher.py</b></p>
 
-<p>Será necessário fazer um ajuste na linha 30 do arquivo <b>cipher.py</b></p>
-
-```python
-var_regex = re.compile("^\$*\w+\W")
-```
+  ```python
+  var_regex = re.compile("^\$*\w+\W")
+  ```
   
-<p>Uma vez que o ajuste foi feito, basta no início do seu código importar a bilbioteca Pytube.</p>
+  <p>Uma vez que o ajuste foi feito, basta no início do seu código importar a bilbioteca Pytube.</p>
 
-```python
-from pytube import YouTube
-```
+  ```python
+  from pytube import YouTube
+  ```
 </details>
 
 <details><summary><h4>MoviePy</h4></summary>
+  <p>Esta biblioteca habilita recursos para edição de vídeo: corte, concatenação, inserções de títulos, composição de vídeo (também   conhecida como edição não linear), processamento de vídeo e criação de efeitos personalizados.</p>
 
-<p>Esta biblioteca habilita recursos para edição de vídeo: corte, concatenação, inserções de títulos, composição de vídeo (também conhecida como edição não linear), processamento de vídeo e criação de efeitos personalizados.</p>
+  <p>A sua documentação pode ser vista em:</p>
 
-<p>A sua documentação pode ser vista em:</p>
+  <pre><a target="_blank" href="https://pypi.org/project/moviepy/">https://pypi.org/project/moviepy/</a></pre>
 
-<pre><a target="_blank" href="https://pypi.org/project/moviepy/">https://pypi.org/project/moviepy/</a></pre>
+  <p>Para usá-la basta no início do seu código importar a bilbioteca MoviePy.</p>
 
-<p>Para usá-la basta no início do seu código importar a bilbioteca MoviePy.</p>
-
-```python
-import moviepy.editor
-```
+  ```python
+  import moviepy.editor
+  ```
 </details>
 
 <details><summary><h4>QRCode</h4></summary>
+  <p>Esta biblioteca é utilizada para a geração de QrCodes.</p>
 
-<p>Esta biblioteca é utilizada para a geração de QrCodes.</p>
+  <p>A sua documentação pode ser vista em:</p>
 
-<p>A sua documentação pode ser vista em:</p>
+  <pre><a target="_blank" href="https://pypi.org/project/qrcode/">https://pypi.org/project/qrcode/</a></pre>
 
-<pre><a target="_blank" href="https://pypi.org/project/qrcode/">https://pypi.org/project/qrcode/</a></pre>
+  <p>Para usá-la basta no início do seu código importar a bilbioteca QRCode.</p>
 
-<p>Para usá-la basta no início do seu código importar a bilbioteca QRCode.</p>
-
-```python
-import qrcode
-```
+  ```python
+  import qrcode
+  ```
   
-<p>A instalação padrão inclui a biblioteca <i>Pillow</i>:</p>
+  <p>A instalação padrão inclui a biblioteca <i>Pillow</i>:</p>
 
-<p>A documentação da biblioteca <i>Pillow</i> pode ser vista em:</p>
+  <p>A documentação da biblioteca <i>Pillow</i> pode ser vista em:</p>
 
-<pre><a target="_blank" href="https://pypi.org/project/Pillow/">https://pypi.org/project/Pillow/</a></pre>
-
+  <pre><a target="_blank" href="https://pypi.org/project/Pillow/">https://pypi.org/project/Pillow/</a></pre>
 </details>
 
 <details><summary><h4>PyQRCode</h4></summary>
-  <p style="font-size: 10px">Esta biblioteca é utilizada para a geração de QrCodes.</p>
+  <p>Esta biblioteca é utilizada para a geração de QrCodes.</p>
 
   <p>A sua documentação pode ser vista em:</p>
 

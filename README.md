@@ -50,6 +50,7 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
 ```python
 var_regex = re.compile("^\$*\w+\W")
 ```
+  
 <p>Uma vez que o ajuste foi feito, basta no início do seu código importar a bilbioteca Pytube.</p>
 
 ```python
@@ -85,13 +86,27 @@ import moviepy.editor
 ```python
 import qrcode
 ```
-
+  
 <p>A instalação padrão inclui a biblioteca <i>Pillow</i>:</p>
 
 <p>A documentação da biblioteca <i>Pillow</i> pode ser vista em:</p>
 
 <pre><a target="_blank" href="https://pypi.org/project/Pillow/">https://pypi.org/project/Pillow/</a></pre>
 
+</details>
+
+<details><summary><h4>PyQRCode</h4></summary>
+  <p style="font-size: 10px">Esta biblioteca é utilizada para a geração de QrCodes.</p>
+
+  <p>A sua documentação pode ser vista em:</p>
+
+  <pre><a target="_blank" href="https://pypi.org/project/PyQRCode/">https://pypi.org/project/PyQRCode/</a></pre>
+
+  <p>Para usá-la basta no início do seu código importar a bilbioteca PyQRCode.</p>
+
+  ```python
+  import pyqrcode
+  ```
 </details>
 
 <hr/>

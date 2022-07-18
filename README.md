@@ -92,11 +92,39 @@ A seguir iremos listar as bibliotecas que precisarão ser instaladas.
 </details>
 
 <details><summary><h4>PyQRCode</h4></summary>
-  <p>Esta biblioteca é utilizada para a geração de QrCodes.</p>
+  <p>Esta biblioteca é um gerador de código QR simples.</p>
+  
+  <p>Ao contrário de outras bibliotecas, todos osparâmetros podem ser ajustados manualmente.</p>
 
   <p>A sua documentação pode ser vista em:</p>
 
   <pre><a target="_blank" href="https://pypi.org/project/PyQRCode/">https://pypi.org/project/PyQRCode/</a></pre>
+
+  <p>Para usá-la basta no início do seu código importar a bilbioteca PyQRCode.</p>
+
+  ```python
+  import pyqrcode
+  ```
+</details>
+
+<details><summary><h4>GeoPy</h4></summary>
+  <p>Esta biblioteca é um cliente para vários serviços web de geocodificação.</p>
+  
+  <p>Ela inclui classes para:</p>
+
+  <ul>
+    <li>OpenStreetMap Nominatim;</li>
+    <li>Google Geocoding API (V3);</i>
+    <li>e outros serviços de geocodificação.
+  </ul>
+  
+  <p>A lista completa está em <</p>
+
+  <pre><a target="_blank" href="https://geopy.readthedocs.io/en/latest/#geocoders">https://geopy.readthedocs.io/en/latest/#geocoders</a></pre>
+  
+  <p>A sua documentação pode ser vista em:</p>
+  
+  <pre><a target="_blank" href="https://pypi.org/project/geopy/">https://pypi.org/project/geopy/</a></pre>
 
   <p>Para usá-la basta no início do seu código importar a bilbioteca PyQRCode.</p>
 

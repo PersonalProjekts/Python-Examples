@@ -22,22 +22,23 @@ try:
     # Criando o objeto 
     yt = YouTube(url_video)
 except:
-    print('\nERRO..: ', sys.exc_info()[0])
+    print(f'\nERRO..: {sys.exc_info()[0]}')
     baixado = False
 else:
     try:
         # Obtem o vídeo de maior resolução
         video_download = yt.streams.get_highest_resolution()
     except:
-        print('\nERRO..: ', sys.exc_info()[0])
+        print(f'\nERRO..: {sys.exc_info()[0]}')
         baixado = False
     else:
         try:
             # Efetua o download do vídeo
+            print(f'\nBaixando: {url_video}')
             video_download.download(output_path=DIR_APP)
             baixado = True
         except:
-            print('\nERRO..: ', sys.exc_info()[0])
+            print(f'\nERRO..: {sys.exc_info()[0]}')
 finally:
     if baixado: 
         print('\nVídeo Baixado com Sucesso...\n')

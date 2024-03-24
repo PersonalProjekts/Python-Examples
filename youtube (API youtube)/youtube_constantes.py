@@ -2,7 +2,7 @@ import platform
 
 # ------------------------------------------------------------------------------------------
 # Constantes Youtube
-API_TOKEN         = 'AIzaSyCkptmwWABYDIFQhwDVK6_L85Bbpfb9SQ0'
+API_TOKEN         = 'YOUR_API_KEY_HERE'
 
 URL_BASE_API      = 'https://youtube.googleapis.com/youtube/v3'
 

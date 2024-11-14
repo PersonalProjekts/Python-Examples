@@ -1,13 +1,13 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo lista os formatos de vídeo e áudio a partir de uma URL do
-# Youtube e permite que se efetue o download de uma das opções listadas
-#
-# Necessário instalar a biblioteca PYTUBE
-#       pip install pytube
-#
-# Documentação
-#       https://pytube.io/en/latest/
-# ------------------------------------------------------------------------------------------
+'''
+    Este exemplo lista os formatos de vídeo e áudio a partir de uma URL do
+    Youtube e permite que se efetue o download de uma das opções listadas
+
+    Necessário instalar a biblioteca PYTUBE
+        pip install pytube
+
+    Documentação
+        https://pytube.io/en/latest/
+'''
 
 import os, sys
 from pytube import YouTube

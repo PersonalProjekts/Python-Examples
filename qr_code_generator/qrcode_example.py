@@ -1,12 +1,12 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo gera um QRCode utilizando a biblioteca QRCODE
-#
-# Necessário instalar a biblioteca QRCODE
-#       pip install qrcode
-#
-# Documentação
-#       https://pypi.org/project/qrcode/
-# ------------------------------------------------------------------------------------------
+'''
+   Este exemplo gera um QRCode utilizando a biblioteca QRCODE
+
+   Necessário instalar a biblioteca QRCODE
+      pip install qrcode
+
+   Documentação
+      https://pypi.org/project/qrcode/
+'''
 
 import os, qrcode
 

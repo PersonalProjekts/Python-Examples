@@ -1,13 +1,13 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo efetua o download do vídeo com a maior resolução a partir
-# de uma URL do Youtube
-#
-# Necessário instalar a biblioteca PYTUBE
-#       pip install pytube
-#
-# Documentação
-#       https://pytube.io/en/latest/
-# ------------------------------------------------------------------------------------------
+'''
+    Este exemplo efetua o download do vídeo com a maior resolução a partir
+    de uma URL do Youtube
+
+    Necessário instalar a biblioteca PYTUBE
+        pip install pytube
+
+    Documentação
+        https://pytube.io/en/latest/
+'''
 
 import os, sys
 from pytube import YouTube

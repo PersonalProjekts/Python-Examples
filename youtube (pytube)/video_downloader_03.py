@@ -1,12 +1,12 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo efetua o download do áudio do vídeo a partir de uma URL do Youtube
-#
-# Necessário instalar a biblioteca PYTUBE
-#       pip install pytube
-#
-# Documentação
-#       https://pytube.io/en/latest/
-# ------------------------------------------------------------------------------------------
+'''
+    Este exemplo efetua o download do áudio do vídeo a partir de uma URL do Youtube
+
+    Necessário instalar a biblioteca PYTUBE
+    pip install pytube
+
+    Documentação
+        https://pytube.io/en/latest/
+'''
 
 import os, sys
 from pytube import YouTube

@@ -1,6 +1,6 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo lista as redes WIFI que já foram conectadas e suas senhas.
-# ------------------------------------------------------------------------------------------
+'''
+    Este exemplo lista as redes WIFI que já foram conectadas e suas senhas.
+'''
 
 import subprocess
 

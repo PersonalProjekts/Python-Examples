@@ -1,6 +1,6 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo informa o IP externo da sua conexão.
-# ------------------------------------------------------------------------------------------
+'''
+   Este exemplo informa o IP externo da sua conexão.
+'''
 
 import socket, requests
 

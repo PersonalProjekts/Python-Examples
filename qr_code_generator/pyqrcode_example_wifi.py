@@ -1,13 +1,13 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo gera um QRCode com as credenciais para autenticação em uma rede 
-# WIFI utilizando a biblioteca PYQRCODE.
-#
-# Necessário instalar a biblioteca PYQRCODE
-#       pip install pyqrcode
-#
-# Documentação
-#       https://pypi.org/project/PyQRCode/
-# ------------------------------------------------------------------------------------------
+'''
+   Este exemplo gera um QRCode com as credenciais para autenticação em uma rede 
+   WIFI utilizando a biblioteca PYQRCODE.
+
+   Necessário instalar a biblioteca PYQRCODE
+      pip install pyqrcode
+
+   Documentação
+      https://pypi.org/project/PyQRCode/
+'''
 
 import os, pyqrcode
 #from PIL import Image

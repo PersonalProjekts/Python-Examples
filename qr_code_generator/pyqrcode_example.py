@@ -1,12 +1,12 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo gera um QRCode utilizando a biblioteca PYQRCODE
-#
-# Necessário instalar a biblioteca PYQRCODE
-#       pip install pyqrcode
-#
-# Documentação
-#       https://pypi.org/project/PyQRCode/
-# ------------------------------------------------------------------------------------------
+'''
+   Este exemplo gera um QRCode utilizando a biblioteca PYQRCODE
+
+   Necessário instalar a biblioteca PYQRCODE
+      pip install pyqrcode
+
+   Documentação
+      https://pypi.org/project/PyQRCode/
+'''
 
 import os
 import pyqrcode

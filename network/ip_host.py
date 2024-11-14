@@ -1,6 +1,6 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo informa o IP de uma determinada URL.
-# ------------------------------------------------------------------------------------------
+'''
+   Este exemplo informa o IP de uma determinada URL.
+'''
 
 import socket
 

@@ -1,14 +1,14 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo salva em um arquivo a listagem de perfis seguidores e em outro 
-# arquivo a listagem perfis que são seguido de um determinado perfil do Instagram.
-#
-# Necessário instalar a biblioteca INSTALOADER
-#       pip install instaloader
-#
-# Documentação
-#       https://pypi.org/project/instaloader/
-#       https://instaloader.github.io/
-# ------------------------------------------------------------------------------------------
+'''
+    Este exemplo salva em um arquivo a listagem de perfis seguidores e em outro 
+    arquivo a listagem perfis que são seguido de um determinado perfil do Instagram.
+
+    Necessário instalar a biblioteca INSTALOADER
+        pip install instaloader
+
+    Documentação
+    https://pypi.org/project/instaloader/
+        https://instaloader.github.io/
+'''
 
 import getpass, sys, os
 from pstats import FunctionProfile

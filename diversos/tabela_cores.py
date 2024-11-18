@@ -1,6 +1,6 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo lista a tabela de cores de fonte/bacground disponíveis.
-# ------------------------------------------------------------------------------------------
+'''
+    Este exemplo lista a tabela de cores de fonte/bacground disponíveis.
+'''
 
 print('-'*128)
 

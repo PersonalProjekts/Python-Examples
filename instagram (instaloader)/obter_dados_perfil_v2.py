@@ -1,17 +1,17 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo exibe a quantidade de perfis seguidores, a quantidades de perfis que 
-# são seguidos, a quantidade de postagens e a URL da foto do perfil de um determinado
-# perfil do Instagram.
-#
-# Trata a exceção de autenticação de 2 fatores.
-#
-# Necessário instalar a biblioteca INSTALOADER
-#       pip install instaloader
-#
-# Documentação
-#       https://pypi.org/project/instaloader/
-#       https://instaloader.github.io/
-# ------------------------------------------------------------------------------------------
+'''
+    Este exemplo exibe a quantidade de perfis seguidores, a quantidades de perfis que 
+    são seguidos, a quantidade de postagens e a URL da foto do perfil de um determinado
+    perfil do Instagram.
+
+    Trata a exceção de autenticação de 2 fatores.
+
+    Necessário instalar a biblioteca INSTALOADER
+        pip install instaloader
+
+    Documentação
+        https://pypi.org/project/instaloader/
+        https://instaloader.github.io/
+'''
 
 import getpass, sys
 from instaloader import BadCredentialsException, Instaloader, Profile, exceptions

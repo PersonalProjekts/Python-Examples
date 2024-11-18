@@ -1,13 +1,13 @@
-# ------------------------------------------------------------------------------------------
-# Este exemplo demonstra a criação de um gráfico de barras agrupadas utilizando 
-# a biblioteca MATPLOTLIB.
-#
-# Necessário instalar a biblioteca MATPLOTLIB
-#       pip install matplotlib
-#
-# Documentação
-#       https://matplotlib.org/
-# ------------------------------------------------------------------------------------------
+'''
+   Este exemplo demonstra a criação de um gráfico de barras agrupadas utilizando 
+   a biblioteca MATPLOTLIB.
+
+   Necessário instalar a biblioteca MATPLOTLIB
+      pip install matplotlib
+
+   Documentação
+      https://matplotlib.org/
+'''
 
 import matplotlib.pyplot as pyplot
 

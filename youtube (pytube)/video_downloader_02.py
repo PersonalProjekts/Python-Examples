@@ -12,9 +12,11 @@
 import os, sys
 from pytube import YouTube
 
+# ------------------------------------------------------------------------------------------
 # Definindo o diretório de salvamento
 DIR_APP = os.path.dirname(os.path.realpath(__file__))
 
+# ------------------------------------------------------------------------------------------
 # Solicitando a URL do vídeo
 url_video = input('\nInforme a URL do vídeo: ')
 

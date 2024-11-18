@@ -35,6 +35,7 @@ COR_ACERTO    = '\033[40;32;1m' #Verde
 COR_AVISO     = '\033[40;33;1m' #Amarela
 COR_PADRAO    = '\033[40;30;1m' #Branca
 
+# ------------------------------------------------------------------------------------------
 # Definindo templates de mensagens
 MSG_ERRO   = f'{COR_ERRO}ERRO.....: {COR_PADRAO}'
 MSG_AVISO  = f'{COR_AVISO}AVISO...: {COR_PADRAO}'

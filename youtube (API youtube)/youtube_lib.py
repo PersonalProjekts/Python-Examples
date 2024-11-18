@@ -6,10 +6,8 @@ from urllib import parse
 # Variável contendo o TOKEN a ser utilizado nas requisições
 strTOKEN = f'&key={API_TOKEN}' if API_TOKEN else ''
 
-
 # ------------------------------------------------------------------------------------------
 tuplaHeaders = ('scheme','netloc','path','params','query','fragment')
-
 
 # ------------------------------------------------------------------------------------------
 # Obter o Channel ID quando for informado o @nome_canal
@@ -36,7 +34,6 @@ def getChannelID(channel_name: str):
             boolSucesso = True
    finally:
       return boolSucesso, strRetorno, strErro
-
 
 # ------------------------------------------------------------------------------------------
 # Retorna dados das playlists de um determinado canal
@@ -88,7 +85,6 @@ def getPlaylists(urlChannel: str, debug: bool):
             boolSucesso = True
    
    return boolSucesso, lstRetorno, strErro
-
 
 # ------------------------------------------------------------------------------------------
 # Retorna os dados dos vídeos de uma determinada playlist

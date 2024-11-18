@@ -30,7 +30,6 @@ if strChannel[0] == '@':
 
 print(f'{COR_AVISO}\n{"-" * 140}\nCanal:\n{COR_PADRAO}{strURL}\n')
 
-
 # ------------------------------------------------------------------------------------------
 # Obtendo dados das Playlists do Canal
 playlists = youtube_lib.getPlaylists(strURL, DEBUG)

@@ -4,12 +4,15 @@
 
 import socket, requests
 
+# ------------------------------------------------------------------------------------------
 # Obtem o nome do seu computador
 hostname = socket.gethostname()
 
+# ------------------------------------------------------------------------------------------
 # Obtem o IP do seu computador na sua rede
 ip_interno = socket.gethostbyname(hostname)
 
+# ------------------------------------------------------------------------------------------
 # Obtém o IP externo da sua rede através do IPIFY (https://www.ipify.org/)
 print(requests.get('https://api.ipify.org'))
 ip_externo = requests.get('https://api.ipify.org').text

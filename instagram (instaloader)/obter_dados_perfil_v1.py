@@ -14,6 +14,7 @@
 import getpass, sys
 from instaloader import Instaloader, Profile, exceptions
 
+# ------------------------------------------------------------------------------------------
 # Solicitando usuário e senha para efetuar login no Instagram
 # Só é necessário para acessar dados de contas não públicas
 user = input('\nInforme seu Login do Instagram .: ')

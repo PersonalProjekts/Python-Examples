@@ -4,14 +4,17 @@
 
 import subprocess
 
+# ------------------------------------------------------------------------------------------
 # Armazenando os dados dos perfis (redes wi-fi) na variável "data"
 # executando o primeiro comando CMD usando subprocess.check_output
 data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles'])
 data = data.decode('utf-8', errors ='backslashreplace').split('\n')
 
+# ------------------------------------------------------------------------------------------
 # Armazenando os perfis (redes wi-fi) em uma lista
 perfis = [i.split(':')[1][1:-1] for i in data if 'Todos os Perfis de Usu\\xa0rios' in i]
 
+# ------------------------------------------------------------------------------------------
 # Checando e imprimindo as senhas wi-fi se elas estiverem disponíveis
 for perfil in perfis:
     try:

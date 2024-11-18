@@ -16,9 +16,11 @@ from time import sleep
 from instaloader import Instaloader, Profile, exceptions
 import instaloader
 
+# ------------------------------------------------------------------------------------------
 # Obtendo o diretório corrente
 DIR_APP = os.path.dirname(os.path.realpath(__file__))
 
+# ------------------------------------------------------------------------------------------
 # Solicitando usuário e senha para efetuar login no Instagram
 user = input('\nInforme seu Login do Instagram .: ')
 pwd  = getpass.getpass('Informe sua senha do Instagram .: ')

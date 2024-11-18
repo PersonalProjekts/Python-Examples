@@ -24,9 +24,7 @@ PARAMS_REQUEST = {
 DEBUG = False
 
 # Definindos comandos de sistema
-SO = platform.system().lower()
-COMANDOS = {'limpa_tela': {'windows': 'cls', 'linux': 'clear'}
-            }
+OPERATIONAL_SYSTEM = platform.system().lower()
 
 # ------------------------------------------------------------------------------------------
 # Definindo as constantes das cores de texto

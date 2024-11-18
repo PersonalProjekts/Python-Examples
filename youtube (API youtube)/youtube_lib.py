@@ -38,9 +38,9 @@ def getChannelID(channel_name: str):
 # ------------------------------------------------------------------------------------------
 # Retorna dados das playlists de um determinado canal
 def getPlaylists(urlChannel: str, debug: bool):
-   boolSucesso      = False
-   lstRetorno       = None
-   strErro          = None
+   boolSucesso = False
+   lstRetorno  = None
+   strErro     = None
    
    # Decompondo a URL
    strURLAnalisada = parse.urlparse(urlChannel)

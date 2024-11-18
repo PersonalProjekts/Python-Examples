@@ -21,7 +21,7 @@ WIFI_SEC  = ['WPA', 'WEP', 'WPA', 'nopass', 'WEP40']
 
 # ------------------------------------------------------------------------------------------
 # Obtendo o diretório corrente
-DIR_APP    = os.path.dirname(os.path.realpath(__file__))
+DIR_APP   = os.path.dirname(os.path.realpath(__file__))
 
 # ------------------------------------------------------------------------------------------
 # Definindo a string para criação do QRCode

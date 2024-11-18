@@ -11,21 +11,19 @@ from youtube_constantes import *
 
 # ------------------------------------------------------------------------------------------
 # Limpando a Tela
-os.system(COMANDOS['limpa_tela'][SO])
+os.system('cls' if OPERATIONAL_SYSTEM == 'Windows' else 'clear')
 
 # ------------------------------------------------------------------------------------------
 # URL do canal a ser pesquisado 
 #strURL = 'https://www.youtube.com/channel/UCyDZDwafway1JnpdQtTJpMQ'
 #strURL = 'https://www.youtube.com/@TVGuruPapaJerimum'
-strURL = 'https://www.youtube.com/@JovemNerd'
 #strURL = input('Informe a URL do Canal: ')
+strURL = 'https://www.youtube.com/@JovemNerd'
 
 strChannel = strURL.rsplit('/',1)[1]
 if strChannel[0] == '@':
    strChannelID = youtube_lib.getChannelID(strChannel)
-   if not strChannelID[0]:
-      print(strChannelID[2])
-      sys.exit()
+   if not strChannelID[0]: sys.exit(strChannelID[2])
    strURL = f'https://www.youtube.com/channel/{strChannelID[1]}'
 
 print(f'{COR_AVISO}\n{"-" * 140}\nCanal:\n{COR_PADRAO}{strURL}\n')
@@ -35,10 +33,7 @@ print(f'{COR_AVISO}\n{"-" * 140}\nCanal:\n{COR_PADRAO}{strURL}\n')
 playlists = youtube_lib.getPlaylists(strURL, DEBUG)
 
 # Se houve erro, exibe-o e sai do programa
-if not playlists[0]:
-   print(playlists[2])
-   sys.exit()
-
+if not playlists[0]: sys.exit(playlists[2])
 
 # ------------------------------------------------------------------------------------------
 # Montando URL de requisição - URLs Playlists do Canal

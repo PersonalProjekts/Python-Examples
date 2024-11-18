@@ -9,11 +9,9 @@ import os, sys
 import youtube_lib
 from youtube_constantes import *
 
-# ------------------------------------------------------------------------------------------
 # Limpando a Tela
 os.system('cls' if OPERATIONAL_SYSTEM == 'Windows' else 'clear')
 
-# ------------------------------------------------------------------------------------------
 # URL do canal a ser pesquisado 
 #strURL = 'https://www.youtube.com/channel/UCyDZDwafway1JnpdQtTJpMQ'
 #strURL = 'https://www.youtube.com/@TVGuruPapaJerimum'
@@ -28,14 +26,12 @@ if strChannel[0] == '@':
 
 print(f'{COR_AVISO}\n{"-" * 140}\nCanal:\n{COR_PADRAO}{strURL}\n')
 
-# ------------------------------------------------------------------------------------------
 # Obtendo dados das Playlists do Canal
 playlists = youtube_lib.getPlaylists(strURL, DEBUG)
 
 # Se houve erro, exibe-o e sai do programa
 if not playlists[0]: sys.exit(playlists[2])
 
-# ------------------------------------------------------------------------------------------
 # Montando URL de requisição - URLs Playlists do Canal
 print(f'{COR_AVISO}\n{"-" * 140}\nResultado da Requisição - URLs das Playlists do Canal{COR_PADRAO}')
 
@@ -48,7 +44,6 @@ for playlist in lstPlaylists: print(playlist,'\n')
 
 sys.exit()
 
-# ------------------------------------------------------------------------------------------
 # Montando URL de requisição - URLs Videos das Playlists
 print(f'{COR_AVISO}\n{"-" * 140}\nResultado da Requisição - URLs dos Vídeos das Playlists do Canal{COR_PADRAO}')
 

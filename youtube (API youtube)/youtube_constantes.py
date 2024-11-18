@@ -28,10 +28,10 @@ OPERATIONAL_SYSTEM = platform.system().lower()
 
 # ------------------------------------------------------------------------------------------
 # Definindo as constantes das cores de texto
-COR_ERRO      = '\033[40;31;1m' #Vermelha
-COR_ACERTO    = '\033[40;32;1m' #Verde
-COR_AVISO     = '\033[40;33;1m' #Amarela
-COR_PADRAO    = '\033[40;30;1m' #Branca
+COR_ERRO      = '\033[40;31;1m' # Vermelha
+COR_ACERTO    = '\033[40;32;1m' # Verde
+COR_AVISO     = '\033[40;33;1m' # Amarela
+COR_PADRAO    = '\033[40;30;1m' # Branca
 
 # ------------------------------------------------------------------------------------------
 # Definindo templates de mensagens

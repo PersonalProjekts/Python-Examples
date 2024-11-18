@@ -1,6 +1,6 @@
 import requests
 
-api_key = 'AIzaSyCkptmwWABYDIFQhwDVK6_L85Bbpfb9SQ0'
+api_key = 'YOUR_API_KEY_HERE'
 playlist_url = 'https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCmEClzCBDx-vrt0GuSKBd9g&key=AIzaSyCkptmwWABYDIFQhwDVK6_L85Bbpfb9SQ0'
 #playlist_url = 'https://www.googleapis.com/youtube/v3/playlists'
 

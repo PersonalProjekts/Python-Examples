@@ -6,6 +6,7 @@
 <hr/>
 <details>
   <summary>color_table.py</summary>
+  <p>&nbsp;</p>
   <p>Este código gera uma tabela completa de combinações de cores e estilos ANSI que podem ser usados em terminais que suportam escape sequences ANSI.</p>
 
   <p>Ele percorre todas as combinações possíveis de:</p>
@@ -31,6 +32,7 @@
 <hr/>
 <details>
   <summary>crivo_eratostenes.py</summary>
+  <p>&nbsp;</p>
   <p>Este código implementa o Crivo de Eratóstenes, um algoritmo clássico para encontrar todos os números primos até um determinado número n. Abaixo está uma explicação detalhada do que cada parte do código faz:</p>
 
   <ul>

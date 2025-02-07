@@ -5,6 +5,38 @@
 <!-- --------------------------------------------------------------------------------------------- -->
 <hr/>
 <details>
+  <summary>ascii_table.py</summary>
+  <p><br/>Este programa imprime a tabela ASCII estendida, que inclui todos os 256 caracteres (valores de 0 a 255).</p>
+
+  <p>Para cada caractere, são exibidas as seguintes informações:</p>
+  <ol>
+    <li>Caractere: O símbolo ou caractere correspondente ao valor ASCII, sempre ocupando 10 posições (preenchido com espaços à esquerda) - Se o caractere for não imprimível, ele será substituído por 'n/d';</li>
+    <li>Decimal: O valor numérico em base decimal;</li>
+    <li>Hexadecimal: O valor numérico em base hexadecimal, formatado com o prefixo '0x';</li>
+    <li>Binário: O valor numérico em base binária, formatado com o prefixo '0b' e sempre com 8 dígitos (preenchido com zeros à esquerda, se necessário).</li>
+  </ol>
+
+  <p>Funcionamento:</p>
+  <ul>
+    <li>A função `chr(i)` converte o valor inteiro `i` para o caractere correspondente;</li>
+    <li>O método `isprintable()` verifica se o caractere é imprimível. Caso contrário, ele é substituído por 'n/d';</li>
+    <li>A função `hex(i)` converte o valor inteiro `i` para uma string hexadecimal;</li>
+    <li>A função `bin(i)[2:].zfill(8)` converte o valor inteiro `i` para uma string binária, remove o prefixo '0b' e garante que o resultado tenha 8 dígitos;</li>
+    <li>A formatação com `f-strings` é usada para alinhar as colunas e garantir uma saída legível.</li>
+  </ul>
+
+  <p>Observações:</p>
+  <ul>
+    <li>Os primeiros 32 caracteres (0 a 31) são caracteres de controle não imprimíveis e serão substituídos por 'n/d'</li>
+    <li>Os caracteres de 128 a 255 fazem parte da tabela ASCII estendida, que inclui caracteres especiais, como letras acentuadas e símbolos;</li>
+    <li>Se o terminal não suportar a exibição de caracteres não-ASCII, alguns caracteres podem não ser exibidos corretamente.</li>
+  </ul>
+</details>
+
+
+<!-- --------------------------------------------------------------------------------------------- -->
+<hr/>
+<details>
   <summary>color_table.py</summary>
   <p><br/>Este código gera uma tabela completa de combinações de cores e estilos ANSI que podem ser usados em terminais que suportam escape sequences ANSI.</p>
 
@@ -17,8 +49,8 @@
 
   <p>Para cada combinação, o código:</p>
   <ol>
-    <li>Aplica a cor e o estilo a um texto de exemplo.</li>
-    <li>Exibe o texto formatado no terminal.</li>
+    <li>Aplica a cor e o estilo a um texto de exemplo;</li>
+    <li>Exibe o texto formatado no terminal;</li>
     <li>Mostra o código ANSI correspondente ao lado do texto formatado.</li>
   </ol>
 
@@ -30,7 +62,7 @@
 <!-- --------------------------------------------------------------------------------------------- -->
 <hr/>
 <details>
-  <summary>crivo_eratostenes.py</summary>
+  <summary>sieve_of_eratosthenes.py</summary>
   <p><br/>Este código implementa o Crivo de Eratóstenes, um algoritmo clássico para encontrar todos os números primos até um determinado número n. Abaixo está uma explicação detalhada do que cada parte do código faz:</p>
 
   <ul>

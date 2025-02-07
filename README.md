@@ -1,5 +1,5 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/23036697/179610525-9ee37437-9302-4681-a5e7-7ce84cd6776a.png" alt="accessibility text">
+<p align='center'>
+  <img src='https://user-images.githubusercontent.com/23036697/179610525-9ee37437-9302-4681-a5e7-7ce84cd6776a.png' alt='accessibility text'>
 </p>
 
 ![Badge Linguagem](http://img.shields.io/static/v1?label=LINGUAGEM&message=PYTHON&color=informational&style=plastic) ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellowgreen&style=plastic) ![Badge Commits](https://img.shields.io/github/commit-activity/w/PersonalProjekts/Python-Examples?label=COMMITS&style=plastic)
@@ -20,7 +20,7 @@
 
 <p>Caso ele não esteja instalado,ele pode ser baixado e instalado a partir da URL a seguir:</p>
 
-<pre><a target="_blank" href="https://pypi.org/project/pip/">https://pypi.org/project/pip/</a></pre>
+<pre><a target='_blank' href='https://pypi.org/project/pip/'>https://pypi.org/project/pip/</a></pre>
 
 <p>Caso ele já esteja instalado é sempre aconselhável atualizar a versão do PIP:</p>
 

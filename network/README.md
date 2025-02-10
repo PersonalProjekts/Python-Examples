@@ -1,36 +1,32 @@
 # Diretório de Exemplos em Python
 
-Este diretório possui exemplos diversos de códigos em Python.
+Este diretório possui exemplos de códigos em Python para operações na rede.
 
 Seguem as descrições de cada um dos exemplos disponibilizados:
 
 ---
 
 <details>
-  <summary><b>ascii_table.py</b></summary>
+  <summary><b>network_info.py</b></summary>
 
-  Este programa imprime a tabela ASCII estendida, que inclui todos os 256 caracteres (valores de 0 a 255).
+  Este programa foi desenvolvido para obter informações de rede (como IP, máscara de sub-rede, gateway e servidor DHCP) e listar todos os IPs válidos na rede local. Ele é compatível com sistemas Windows, Linux e macOS.
 
-  Para cada caractere, são exibidas as seguintes informações:
+  **Funcionalidades:**
 
-  1. **Caractere**: O símbolo ou caractere correspondente ao valor ASCII, sempre ocupando 10 posições (preenchido com espaços à esquerda) - Se o caractere for não imprimível, ele será substituído por 'n/d';
-  2. **Decimal**: O valor numérico em base decimal;
-  3. **Hexadecimal**: O valor numérico em base hexadecimal, formatado com o prefixo '0x';
-  4. **Binário**: O valor numérico em base binária, formatado com o prefixo '0b' e sempre com 8 dígitos (preenchido com zeros à esquerda, se necessário).
+  - ***Obtenção de informações de rede***:
+    - IP local.
+    - Máscara de sub-rede.
+    - Gateway padrão.
+    - Servidor DHCP.
+    - Conversão da máscara de sub-rede para formato CIDR.
 
-  **Funcionamento:**
+  - ***Listagem de IPs válidos***:
+    - Gera uma lista de todos os IPs válidos na rede local com base no IP e na máscara de sub-rede.
 
-  - A função `chr(i)` converte o valor inteiro `i` para o caractere correspondente;
-  - O método `isprintable()` verifica se o caractere é imprimível. Caso contrário, ele é substituído por 'n/d';
-  - A função `hex(i)` converte o valor inteiro `i` para uma string hexadecimal;
-  - A função `bin(i)[2:].zfill(8)` converte o valor inteiro `i` para uma string binária, remove o prefixo '0b' e garante que o resultado tenha 8 dígitos;
-  - A formatação com `f-strings` é usada para alinhar as colunas e garantir uma saída legível.
 
-  **Observações:**
+  **Como funciona:**
 
-  - Os primeiros 32 caracteres (0 a 31) são caracteres de controle não imprimíveis e serão substituídos por 'n/d';
-  - Os caracteres de 128 a 255 fazem parte da tabela ASCII estendida, que inclui caracteres especiais, como letras acentuadas e símbolos;
-  - Se o terminal não suportar a exibição de caracteres não-ASCII, alguns caracteres podem não ser exibidos corretamente.
+  O programa utiliza comandos do sistema operacional (`ipconfig` no Windows e `ifconfig` no Linux/macOS) para obter as informações de rede. Em seguida, ele converte a máscara de sub-rede para o formato CIDR e calcula todos os IPs válidos na rede.
 </details>
 
 ---

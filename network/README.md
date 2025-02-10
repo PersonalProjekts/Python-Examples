@@ -54,7 +54,7 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
     pip install requests
   ```
   Para mais informações sobre a biblioteca `requests`, consulte a [documentação oficial](https://pypi.org/project/requests/).
-
+</details>
 ---
 
 <details>
@@ -131,4 +131,4 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
   MinhaRedeWiFi                  | Infraestrutura       | WPA2                 | AES
   OutraRede                      | Infraestrutura       | WPA                  | TKIP
   ```
-  
+  </details>

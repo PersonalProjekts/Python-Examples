@@ -1,27 +1,24 @@
-'''
-   Este exemplo gera um QRCode utilizando a biblioteca PYQRCODE
+import os, pyqrcode
 
-   Necessário instalar a biblioteca PYQRCODE
-      pip install pyqrcode
+# --------------------------------------------------------------------------------
+# Função principal 
+def main():
+   # Obtendo o diretório corrente
+   DIR_APP = os.path.dirname(__file__)
 
-   Documentação
-      https://pypi.org/project/PyQRCode/
-'''
+   # Solicitando o que será gerado o QrCode
+   strTexto = input('Digite o que você deseja gerar o QrCode: ')
 
-import os
-import pyqrcode
+   # Gerando o QrCode
+   imgQrcode = pyqrcode.create(strTexto)
 
-# Obtendo o diretório corrente
-DIR_APP = os.path.dirname(os.path.realpath(__file__))
+   # Salvando o QrCode no formato SVG
+   imgQrcode.svg(DIR_APP + '\\qrcode.svg', scale=8)
 
-# Solicitando o que será gerado o QrCode
-str_input = input('Digite o que você deseja gerar o QrCode: ')
+   # Salvando o QrCode no formato PNG
+   imgQrcode.png(DIR_APP + '\\qrcode.png', scale=6)
 
-# Gerando o QrCode
-img_qrcode = pyqrcode.create(str_input)
-
-# Salvando o QrCode no formato SVG
-img_qrcode.svg(DIR_APP + '\\qrcode.svg', scale=8)
-
-# Salvando o QrCode no formato PNG
-img_qrcode.png(DIR_APP + '\\qrcode.png', scale=6)
+# --------------------------------------------------------------------------------
+# Chama a função principal
+if __name__ == "__main__":
+    main()

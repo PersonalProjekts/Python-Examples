@@ -1,8 +1,34 @@
 # Diretório de Exemplos em Python
 
-Este diretório possui exemplos de códigos em Python para geração de QrCodes.
+  Este diretório possui exemplos de códigos em Python para geração de QrCodes.
 
-Seguem as descrições de cada um dos exemplos disponibilizados:
+  Em alguns exemplos, onde salvamos o QrCode gerado no formato PNG faz-se necessária a instalação da biblioteca `pypng`.
+
+## Por que instalar a biblioteca `pypng`?
+
+  A biblioteca `pypng` é uma dependência necessária para gerar arquivos PNG ao usar a biblioteca `pyqrcode`. O `pyqrcode` é uma ferramenta popular para criar QR Codes em Python, mas ele depende do `pypng` para salvar os QR Codes gerados no formato PNG.
+
+  Sem a biblioteca `pypng`, você pode encontrar o seguinte erro ao tentar gerar um QR Code em formato PNG:
+
+  ```python
+  ModuleNotFoundError: No module named 'png'
+  ```
+
+  Isso ocorre porque o código está tentando manipular e salvar imagens no formato PNG e a biblioteca `pypng` não está instalada.
+
+## Como instalar a biblioteca `pypng`?
+
+  Para instalar a biblioteca `pypng`, siga os passos abaixo:
+
+  1. Abra o terminal ou prompt de comando.
+  2. Execute o seguinte comando usando o `pip`, que é o gerenciador de pacotes do Python:
+
+   ```bash
+   pip install pypng
+   ```
+
+
+A seguir temos as descrições de cada um dos exemplos disponibilizados neste diretório:
 
 ---
 

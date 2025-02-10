@@ -1,6 +1,7 @@
 import subprocess, platform, re, sys, ipaddress
 
 # --------------------------------------------------------------------------------
+# Converte a máscara de sub-rede em formato CIDR
 def ip2CIDR(mascara: str) -> int:
     # Converte a máscara de sub-rede em formato CIDR
     mask_parts = mascara.split(".")
@@ -10,6 +11,7 @@ def ip2CIDR(mascara: str) -> int:
     return cidr
 
 # --------------------------------------------------------------------------------
+# Obtém as informações de IP no Windows
 def getWindowsIPInfo() -> dict:
    # Inicializa o dicionário para armazenar as informações
    dictResultado = dict()
@@ -45,6 +47,7 @@ def getWindowsIPInfo() -> dict:
    return dictResultado
    
 # --------------------------------------------------------------------------------
+# Obtém as informações de IP no Linux/macOS
 def getLinuxIPInfo() -> dict:
    # Inicializa o dicionário para armazenar as informações
    dictResultado = dict()
@@ -79,6 +82,7 @@ def getLinuxIPInfo() -> dict:
    return dictResultado
 
 # --------------------------------------------------------------------------------
+# Obtém as informações de rede
 def getNetworkInfo() -> dict:
    # Obtém o nome do sistema operacional
    strSistemaOperacional = platform.system().lower()
@@ -98,6 +102,7 @@ def getNetworkInfo() -> dict:
    return dictNetworkInfo
 
 # --------------------------------------------------------------------------------
+# Obtém a lista de IPs válidos na rede
 def getIPValidos(network_info: dict) -> list:
     if not network_info or not network_info['IP'] or not network_info['CIDR']:
         return None
@@ -109,6 +114,7 @@ def getIPValidos(network_info: dict) -> list:
     return [str(ip) for ip in network.hosts()]
 
 # --------------------------------------------------------------------------------
+# Função principal 
 def main():
     # Obtém as informações de rede
     netInfo = getNetworkInfo()
@@ -122,5 +128,6 @@ def main():
     print(f'IP\'s válidos na rede: {len(IPsValidos)} ({IPsValidos[0]} - {IPsValidos[-1]})')
 
 # --------------------------------------------------------------------------------
+# Chama a função principal
 if __name__ == "__main__":
     main()

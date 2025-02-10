@@ -7,45 +7,6 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
 ---
 
 <details>
-  <summary style="color: blue;"><b>network_info.py</b></summary>
-
-  <p style="color: green;">
-    Este programa foi desenvolvido para obter informações de rede (como IP, máscara de sub-rede, gateway e servidor DHCP) e listar todos os IPs válidos na rede local. Ele é compatível com sistemas Windows, Linux e macOS.
-  </p>
-
-  <p style="color: green;">
-    <strong>Funcionalidades:</strong>
-  </p>
-
-  <ul style="color: green;">
-    <li><strong>Obtenção de informações de rede</strong>:
-      <ul>
-        <li>IP local.</li>
-        <li>Máscara de sub-rede.</li>
-        <li>Gateway padrão.</li>
-        <li>Servidor DHCP.</li>
-        <li>Conversão da máscara de sub-rede para formato CIDR.</li>
-      </ul>
-    </li>
-    <li><strong>Listagem de IPs válidos</strong>:
-      <ul>
-        <li>Gera uma lista de todos os IPs válidos na rede local com base no IP e na máscara de sub-rede.</li>
-      </ul>
-    </li>
-  </ul>
-
-  <p style="color: green;">
-    <strong>Como funciona:</strong>
-  </p>
-
-  <p style="color: green;">
-    O programa utiliza comandos do sistema operacional (<code>ipconfig</code> no Windows e <code>ifconfig</code> no Linux/macOS) para obter as informações de rede. Em seguida, ele converte a máscara de sub-rede para o formato CIDR e calcula todos os IPs válidos na rede.
-  </p>
-</details>
-
----
-
-<details>
   <summary><b>external_host_ip.py</b></summary>
 
   Este programa foi desenvolvido para obter informações básicas de rede, como o nome do host, o IP interno (local) e o IP externo da rede. Ele utiliza a biblioteca `socket` para obter o nome do host e o IP interno, e a biblioteca `requests` para consultar o IP externo por meio do serviço `checkip.amazonaws.com` da AWS.
@@ -93,3 +54,81 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
     pip install requests
   ```
   Para mais informações sobre a biblioteca `requests`, consulte a [documentação oficial](https://pypi.org/project/requests/).
+
+---
+
+<details>
+  <summary><b>network_info.py</b></summary>
+
+  Este programa foi desenvolvido para obter informações de rede (como IP, máscara de sub-rede, gateway e servidor DHCP) e listar todos os IPs válidos na rede local. Ele é compatível com sistemas Windows, Linux e macOS.
+
+  **Funcionalidades:**
+
+  - ***Obtenção de informações de rede***:
+    - IP local.
+    - Máscara de sub-rede.
+    - Gateway padrão.
+    - Servidor DHCP.
+    - Conversão da máscara de sub-rede para formato CIDR.
+
+  - ***Listagem de IPs válidos***:
+    - Gera uma lista de todos os IPs válidos na rede local com base no IP e na máscara de sub-rede.
+
+
+  **Como funciona:**
+
+  O programa utiliza comandos do sistema operacional (`ipconfig` no Windows e `ifconfig` no Linux/macOS) para obter as informações de rede. Em seguida, ele converte a máscara de sub-rede para o formato CIDR e calcula todos os IPs válidos na rede.
+</details>
+
+---
+
+<details>
+  <summary><b>wlan_network_scanner.py</b></summary>
+
+  Este programa foi desenvolvido para listar todas as redes Wi-Fi disponíveis ao redor do dispositivo e exibir informações detalhadas sobre cada uma delas, como tipo de rede, método de autenticação e tipo de criptografia. Ele é compatível com sistemas Windows e Linux, utilizando comandos específicos para cada plataforma.
+
+  **Funcionalidades:**
+
+  - ***Listagem de Redes Wi-Fi***:
+    - Identifica todas as redes Wi-Fi disponíveis ao redor do dispositivo.
+    - Extrai informações como SSID (nome da rede), tipo de rede, método de autenticação e tipo de criptografia.
+
+  - ***Compatibilidade Multiplataforma***:
+    - Funciona tanto no Windows quanto no Linux, adaptando-se automaticamente ao sistema operacional em execução.
+
+  - ***Exibição de Informações***:
+    - Exibe as informações das redes Wi-Fi de forma organizada em uma tabela no terminal.
+
+  **Como funciona:**
+
+  O programa detecta o sistema operacional em execução e utiliza comandos específicos para listar as redes Wi-Fi:
+  - No **Windows**, o comando `netsh wlan show network` é utilizado.
+  - No **Linux**, o comando `nmcli -t -f SSID,SECURITY dev wifi` é utilizado.
+
+  As informações são processadas e organizadas em um dicionário, que é exibido em formato tabular no terminal.
+
+  **Dependências:**
+
+  - **Windows**: Não requer dependências adicionais, pois utiliza comandos nativos do sistema.
+  - **Linux**: Requer o `nmcli` (parte do NetworkManager), que geralmente já está instalado na maioria das distribuições Linux. Caso não esteja, pode ser instalado com:
+    ```bash
+    sudo apt-get install network-manager  # Para distribuições baseadas em Debian/Ubuntu
+    sudo yum install NetworkManager       # Para distribuições baseadas em RedHat/CentOS
+    ```
+
+  **Exemplo de Saída:**
+
+  O programa exibe uma tabela no terminal com as seguintes colunas:
+
+  - **SSID**: Nome da rede Wi-Fi.
+  - **Tipo de Rede**: Tipo de rede (por exemplo, Infraestrutura).
+  - **Autenticação**: Método de autenticação utilizado pela rede (por exemplo, WPA2).
+  - **Criptografia**: Tipo de criptografia utilizado pela rede (por exemplo, AES).
+
+  ```plaintext
+  SSID                           | Tipo de Rede         | Autenticação         | Criptografia
+  --------------------------------------------------------------------------------------------
+  MinhaRedeWiFi                  | Infraestrutura       | WPA2                 | AES
+  OutraRede                      | Infraestrutura       | WPA                  | TKIP
+  ```
+  

@@ -7,7 +7,7 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
 ---
 
 <details>
-  <summary><b>qr_code_generator.py</b></summary>
+  <summary><b>qrcode_example.py</b></summary>
 
   Este programa foi desenvolvido para gerar QR Codes a partir de uma entrada de texto fornecida pelo usuário. Ele utiliza a biblioteca `qrcode` para criar e salvar o QR Code em um arquivo de imagem no formato PNG.
 
@@ -38,8 +38,9 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
 
   Para utilizar este programa, é necessário instalar a biblioteca `qrcode`. Isso pode ser feito utilizando o gerenciador de pacotes `pip` com o seguinte comando:
 
-  ```bash```
-  ```pip install qrcode```
+  ```bash
+  pip install qrcode
+  ```
   
   Para mais informações sobre a biblioteca `qrcode`, consulte a [documentação oficial](https://pypi.org/project/qrcode/).
 </details>
@@ -47,7 +48,7 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
 ---
 
 <details>
-  <summary><b>qr_code_generator.py</b></summary>
+  <summary><b>pyqrcode_example.py</b></summary>
 
   Este programa foi desenvolvido para gerar QR Codes a partir de uma entrada de texto fornecida pelo usuário. Ele utiliza a biblioteca `PyQRCode` para criar e salvar o QR Code em arquivos de imagem nos formatos SVG e PNG.
 
@@ -68,8 +69,9 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
 
   Para utilizar este programa, é necessário instalar a biblioteca `PyQRCode`. Isso pode ser feito utilizando o gerenciador de pacotes `pip` com o seguinte comando:
 
-```bash
-    pip install qrcode```
+  ```bash
+    pip install pyqrcode
+  ```
 
   Para mais informações sobre a biblioteca `PyQRCode`, consulte a [documentação oficial](https://pypi.org/project/PyQRCode/).
   </details>

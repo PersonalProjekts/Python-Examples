@@ -98,38 +98,34 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
 
   **Explicando as variáveis:**
 
-    ### **WIFI_SSID**
-    - **Descrição**: Esta variável armazena o nome da rede Wi-Fi (SSID - Service Set Identifier).
-    - **Tipo**: String.
-   - **Exemplo**: 
+  - ***WIFI_SSID***
+    - Descrição: Esta variável armazena o nome da rede Wi-Fi (SSID - Service Set Identifier).
+    - Tipo: String.
+    - Exemplo: 
        ```python
        WIFI_SSID = 'MinhaRedeWiFi'
        ```
-   - **Uso no QR Code**: O SSID é incluído na string que gera o QR Code no formato `S:<SSID>`.
 
-   ### **WIFI_PWD**
-    - **Descrição**: Esta variável armazena a senha da rede Wi-Fi.
-    - **Tipo**: String.
-    - **Exemplo**:
+  - ***WIFI_PWD***
+    - Descrição: Esta variável armazena a senha da rede Wi-Fi.
+    - Tipo: String.
+    - Exemplo:
       ```python
       WIFI_PWD = 'SenhaSegura123'
-      ```
-  
-    - **Uso no QR Code**: A senha é incluída na string que gera o QR Code no formato `P:<Senha>`.
+      ```  
 
-    ### **WIFI_SEC**
-    - **Descrição**: Esta variável define o tipo de segurança da rede Wi-Fi. Ela é uma lista que contém os possíveis tipos de segurança suportados.
-    - **Tipo**: Lista de strings.
-    - **Valores possíveis**:
+  - ***WIFI_SEC***
+    - Descrição: Esta variável define o tipo de segurança da rede Wi-Fi. Ela é uma lista que contém os possíveis tipos de segurança suportados.
+    - Tipo: Lista de strings.
+    - Valores possíveis:
       - `'WPA'`: Wi-Fi Protected Access (recomendado para redes modernas).
       - `'WEP'`: Wired Equivalent Privacy (menos seguro, utilizado em redes antigas).
       - `'nopass'`: Rede aberta, sem senha.
       - `'WEP40'`: Uma variante do WEP com chave de 40 bits.
-      - **Exemplo**:
+      - Exemplo:
         ```python
         WIFI_SEC = ['WPA', 'WEP', 'nopass', 'WEP40']
         ```
-      - **Uso no QR Code**: O tipo de segurança é incluído na string que gera o QR Code no formato `T:<Tipo de Segurança>`. O primeiro valor da lista (`WIFI_SEC[0]`) é utilizado como padrão.
 
   **Dependências:**
 

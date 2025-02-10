@@ -69,7 +69,7 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
   Para utilizar este programa, é necessário instalar a biblioteca `PyQRCode`. Isso pode ser feito utilizando o gerenciador de pacotes `pip` com o seguinte comando:
 
 ```bash
-    pip install qrcode
+    pip install qrcode```
 
   Para mais informações sobre a biblioteca `PyQRCode`, consulte a [documentação oficial](https://pypi.org/project/PyQRCode/).
   </details>

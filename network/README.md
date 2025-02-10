@@ -7,26 +7,40 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
 ---
 
 <details>
-  <summary><b>network_info.py</b></summary>
+  <summary style="color: blue;"><b>network_info.py</b></summary>
 
-  Este programa foi desenvolvido para obter informações de rede (como IP, máscara de sub-rede, gateway e servidor DHCP) e listar todos os IPs válidos na rede local. Ele é compatível com sistemas Windows, Linux e macOS.
+  <p style="color: green;">
+    Este programa foi desenvolvido para obter informações de rede (como IP, máscara de sub-rede, gateway e servidor DHCP) e listar todos os IPs válidos na rede local. Ele é compatível com sistemas Windows, Linux e macOS.
+  </p>
 
-  **Funcionalidades:**
+  <p style="color: green;">
+    <strong>Funcionalidades:</strong>
+  </p>
 
-  - ***Obtenção de informações de rede***:
-    - IP local.
-    - Máscara de sub-rede.
-    - Gateway padrão.
-    - Servidor DHCP.
-    - Conversão da máscara de sub-rede para formato CIDR.
+  <ul style="color: green;">
+    <li><strong>Obtenção de informações de rede</strong>:
+      <ul>
+        <li>IP local.</li>
+        <li>Máscara de sub-rede.</li>
+        <li>Gateway padrão.</li>
+        <li>Servidor DHCP.</li>
+        <li>Conversão da máscara de sub-rede para formato CIDR.</li>
+      </ul>
+    </li>
+    <li><strong>Listagem de IPs válidos</strong>:
+      <ul>
+        <li>Gera uma lista de todos os IPs válidos na rede local com base no IP e na máscara de sub-rede.</li>
+      </ul>
+    </li>
+  </ul>
 
-  - ***Listagem de IPs válidos***:
-    - Gera uma lista de todos os IPs válidos na rede local com base no IP e na máscara de sub-rede.
+  <p style="color: green;">
+    <strong>Como funciona:</strong>
+  </p>
 
-
-  **Como funciona:**
-
-  O programa utiliza comandos do sistema operacional (`ipconfig` no Windows e `ifconfig` no Linux/macOS) para obter as informações de rede. Em seguida, ele converte a máscara de sub-rede para o formato CIDR e calcula todos os IPs válidos na rede.
+  <p style="color: green;">
+    O programa utiliza comandos do sistema operacional (<code>ipconfig</code> no Windows e <code>ifconfig</code> no Linux/macOS) para obter as informações de rede. Em seguida, ele converte a máscara de sub-rede para o formato CIDR e calcula todos os IPs válidos na rede.
+  </p>
 </details>
 
 ---

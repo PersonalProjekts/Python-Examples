@@ -55,6 +55,7 @@ Seguem as descrições de cada um dos exemplos disponibilizados:
   ```
   Para mais informações sobre a biblioteca `requests`, consulte a [documentação oficial](https://pypi.org/project/requests/).
 </details>
+
 ---
 
 <details>

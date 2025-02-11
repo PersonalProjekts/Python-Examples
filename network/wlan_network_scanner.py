@@ -2,7 +2,7 @@ import subprocess, platform
 
 # --------------------------------------------------------------------------------
 # Obtém a lista de redes Wi-Fi no Windows usando o comando netsh
-def get_wifi_networks_windows():
+def getWifiNetworkWindows():
    try:
       devices = subprocess.check_output(['netsh', 'wlan', 'show', 'network'])
       devices = devices.decode('utf-8', errors='backslashreplace').split('\n')
@@ -25,7 +25,7 @@ def get_wifi_networks_windows():
 
 # --------------------------------------------------------------------------------
 # Obtém a lista de redes Wi-Fi no Linux usando o comando nmcli
-def get_wifi_networks_linux():
+def getWifiNetworkLinux():
    try:
       devices = subprocess.check_output(['nmcli', '-t', '-f', 'SSID,SECURITY', 'dev', 'wifi'])
       devices = devices.decode('utf-8', errors='backslashreplace').split('\n')
@@ -48,9 +48,9 @@ def get_wifi_networks_linux():
 def main():
    strSistOpera = platform.system()
    if strSistOpera == 'Windows':
-      dictRedes = get_wifi_networks_windows()
+      dictRedes = getWifiNetworkWindows()
    elif strSistOpera == 'Linux':
-      dictRedes = get_wifi_networks_linux()
+      dictRedes = getWifiNetworkLinux()
    else:
       print('ERRO: Sistema operacional não suportado.')
       return
